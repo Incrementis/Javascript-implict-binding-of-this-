@@ -23,9 +23,9 @@
 // Purpose: Contains all html tags which are used/needed within this code
 var Website = 
 {
-	table: 			document.getElementById('content'),
-	fileInput: 		document.getElementById('csv-file'),
-	radioComma:		document.getElementById('comma'),
+	table: 		document.getElementById('content'),
+	fileInput: 	document.getElementById('csv-file'),
+	radioComma:	document.getElementById('comma'),
 	radioSemicolon:	document.getElementById('semicolon'),
 	radioWhitespace:document.getElementById('whitespace'),
 	radioTabulator:	document.getElementById('tabulator'),
@@ -38,7 +38,7 @@ var CSV_Content =
 {
 	numOfHeaders: 0,	// Will be set with the number of headers found in CSV
 	numOfContent: 0,	// Will be set with the number of lines found in CSV
-	separator:	"NONE",	// Will be filled with the user chosen separator
+	separator:"NONE",	// Will be filled with the user chosen separator
 	raw: "EMPTY!",		// Will be filled with the complete CSV-text
 	refined: [],		// Will be filled with parsed the raw content
 	// Purpose: Parses through the CSV file and stores result into a two dimensional array
