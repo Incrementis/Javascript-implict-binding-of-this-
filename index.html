@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+
+<html>
+
+	<head>
+	
+		<title>CSV File Reader</title>
+		<meta charset="UTF-8">
+	
+	</head>
+	
+	
+	<!--
+		NOTE:
+		===============================================================================================
+		
+		Because of simplicity & demonstration purposes, the "style" attribute is used within html tags.
+		Nevertheless it is recommended to use CSS for styling.
+		
+		In '<body>' the 'style="text-align:center;"' 
+		centers similar like the tag '<center>' which was used in some previous mini-projects.
+		
+		Some tag attributes are put into new lines, to keep them more visible.
+		===============================================================================================
+	-->
+	
+	
+	<body style="text-align:center; margin-left: auto; margin-right:auto;">
+	
+	
+		<section style="margin-top:25px;">
+			
+			<h1>File Options</h1>
+			
+			<input id="csv-file" type="file" accept=".csv" onchange="Read();">
+			
+			<div style="margin-top:30px; margin-bottom:30px; color:green" onchange="setSeparator();">
+			
+				<input type="radio" id="comma" name="seperators" value=",">	
+				<label for="comma">Comma(,)</label>
+				
+				<br>
+				<br>
+				<input type="radio" id="semicolon" name="seperators" value=";">
+				<label for="semicolon">Semicolon(;)</label>
+				
+				<br>
+				<br>
+				<input type="radio" id="whitespace" name="seperators" value=" ">
+				<label for="whitespace">Whitespace(" ")</label>
+				
+				<br>
+				<br>
+				<input type="radio" id="tabulator" name="seperators" value="	">	
+				<label for="tabulator">Tabulator("	")</label>
+			</div>
+				
+				<button style="background-color:#eeccff; width:70px; height:30px;" onclick="BuildTable()">START</button>
+		
+		</section>
+		
+	
+		<section>
+			
+			<h1>Table Content</h1>
+			
+			<table 	id="content" 
+					align="center" 
+					cellpadding="5" 
+					style="background-color:yellow; border: 2px solid black; padding:10px;">
+					
+			
+			</table>
+		
+		</section>
+	
+		
+	
+		<section>
+		
+			<br>
+			<br>
+			For more explanation please visit - 
+			<a href="https://github.com/Incrementis/Javascript-implict-binding-of-this-/wiki"> 
+			implicit binding of keyword this Wiki</a>
+			
+		</section>
+		
+		
+		<footer>
+	
+			<script language="javascript" type="text/javascript" src="csv_reader.js"></script>
+	
+		</footer>
+		
+	</body>
+
+	
+	
+	
+	 
+
+</html>
