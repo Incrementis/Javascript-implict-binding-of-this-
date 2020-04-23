@@ -11,6 +11,9 @@
 	Depending on the developers javascript experience and improving naming(functions, variables),
 	the amount of comments could be reduced.
 	I recommend reading the code in baby steps and using google chrome`s debugging tools if needed.
+	
+	Writing a further improved CSV parser would go beyond the scope of the demo.
+	As a result the files myData_comma.csv and myData_whitespace.csv are not parsed properly.
 	===============================================================================================
 */
 
